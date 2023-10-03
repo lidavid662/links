@@ -2,6 +2,7 @@
 <html>
   <head>
     <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css?family=Cabin|Roboto:400,700|Roboto+Condensed:400,700" rel="stylesheet">
         <David's Bio>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/js/all.min.js"></script>
         <style>
@@ -9,7 +10,7 @@
             padding-top: 40px;
             padding-bottom: 40px;
             background-color: #0f0e17;
-            
+            display: flex;
             justify-content: center;
           }
           .bannerPic {
@@ -17,16 +18,9 @@
             height: 128px;
             object-fit: cover;
             border-radius: 32px;
-            justify-content: center;
-          }
-          .name {
-            color: #fffffe;
-            justify-content: center;
           }
           .socialIcons {
-            color: #fffffe
             display: flex;
-            flex-direction: row;
             justify-content: space-around;
           }
           .thumbnail {
@@ -34,12 +28,33 @@
             height: 48px;
             border-radius: 12px;
             object-fit: cover;
-
+          }
+          .name {
+            color: #fffffe;
+            display: flex;
+            justify-content: center;
+            font-family: 'Roboto Condensed', sans-serif;
+            font-size: 35px;
+          }
+          .socialIcons a {
+            color: #fffffe;
+            text-decoration: none;
+            font-family: 'Cabin', sans-serif;
+            font-size: 16px;
           }
           .link {
-            background-color: #fffffe;
-            color: #0f0e17;
+            background-color: hsl(32, 100%, 10%);
+            display: flex;
+            align-items: center;
+            padding: 5px;
+          }
+          .link a {
+            color: #ffffff;
+            text-decoration: none;
             text-align: center;
+            flex-grow: 1;
+            font-family: 'Roboto Condensed', sans-serif;
+            font-size: 35px;
           }
           .items {
             display: flex;
@@ -47,9 +62,12 @@
             gap: 30px;
             max-width: 640px;
             flex-grow: 1;
+          }
+          .banner {
+            display: flex;
             justify-content: center;
           }
-        </style>
+          </style>
   </head>
   <body>
     <div class="items">
@@ -63,15 +81,15 @@
 
     <div class="socialIcons">
       <a href="https://github.com/lidavid662" target="_blank">
-        GitHub
+        GitHub | 
       </a>
 
       <a href="https://www.linkedin.com/in/lidavid662/" target="_blank">
-        LinkedIn
+         LinkedIn 
       </a>
 
       <a href="https://www.instagram.com/davidisli/" target="_blank">
-        Instagram
+         | Instagram
       </a>
     </div>
     <div class="link">
