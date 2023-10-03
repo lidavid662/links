@@ -1,15 +1,67 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <!-- where we tell the browser how to process the document: -->
+    <meta charset="UTF-8">
         <David's Bio>
-        <!-- what style sheets to load -->
-        <!-- what language to use -->
-          <!-- we will always use a character set called UTF-8 -->
-          <!-- UTF-8 allows for all languages as well as things like emoji -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/js/all.min.js"></script>
+        <style>
+          body {
+            padding-top: 40px;
+            padding-bottom: 40px;
+            background-color: #0f0e17;
+            
+            justify-content: center;
+          }
+          .bannerPic {
+            width: 128px;
+            height: 128px;
+            object-fit: cover;
+            border-radius: 32px;
+            justify-content: center;
+          }
+          .name {
+            color: #fffffe;
+            justify-content: center;
+          }
+          .socialIcons {
+            color: #fffffe
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+          }
+          .thumbnail {
+            width: 48px;
+            height: 48px;
+            border-radius: 12px;
+            object-fit: cover;
+
+          }
+          .link {
+            background-color: #fffffe;
+            color: #0f0e17;
+            text-align: center;
+          }
+          .items {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            max-width: 640px;
+            flex-grow: 1;
+            justify-content: center;
+          }
+        </style>
   </head>
   <body>
-    <div class="social-icons">
+    <div class="items">
+    <div class="banner">
+      <img src="NBX_Snapshot_2023-01-14_22-14-00-101.png" alt="Bad Picture of David" class="bannerPic">
+    </div>
+
+    <div class="name">
+      David Li
+    </div>
+
+    <div class="socialIcons">
       <a href="https://github.com/lidavid662" target="_blank">
         GitHub
       </a>
@@ -22,5 +74,18 @@
         Instagram
       </a>
     </div>
+    <div class="link">
+      <img class="thumbnail"
+        src="Cow_(Fleckvieh_breed)_Oeschinensee_Slaunger_2009-07-07.jpg">
+  
+      <a target="_blank" href="https://en.wikipedia.org/wiki/Cattle">Cows</a>
+    </div>
+    <div class="link">
+      <img class="thumbnail"
+        src="Anser_anser_1_(Piotr_Kuczynski).jpg">
+  
+      <a target="_blank" href="https://en.wikipedia.org/wiki/Goose">Geese</a>
+    </div>
+  </div>
   </body>
 </html>
